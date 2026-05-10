@@ -1,8 +1,1773 @@
-h1 {
-  font-family: "GFS Didot", serif;
-  font-weight: 400;
-  text-align: center;
-  font-size: 82px;
-  margin-top: 100px;
-  color: white;
+/* ============================================================
+   GLOBAL STYLES
+   Base styles applied across the entire page
+   ============================================================ */
+
+   body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    max-width: 1920px;
+    width: 100%;
 }
+
+h3 {
+    font-family: 'GFS Didot', serif;
+    font-size: 48px;
+    font-weight: 300;
+    color: #7c0033;
+    padding: 0px;
+    margin: 0;
+}
+
+h4 {
+    font-family: 'GFS Didot', serif;
+    font-size: 32px;
+    font-weight: 300;
+    color: #7c0033;
+    padding: 0px;
+    margin: 0px;
+}
+
+p {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+}
+
+.bold {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Lato", sans-serif;
+    padding: 0px;
+    margin: 0;
+}
+
+
+/* ============================================================
+   WHO ARE WE SECTION
+   Intro section with heading, image, and description text
+   ============================================================ */
+
+.who-are-we {
+    max-width: 1920px;
+    width: 100%;
+}
+
+.who-container {
+    max-width: 1658px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.who-top {
+    max-width: 1658px;
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.who-bottom {
+    max-width: 1658px;
+    width: 100%;
+    min-height: 384px;
+}
+
+
+/* ============================================================
+   OUR JOURNEY SECTION
+   Timeline showing key milestones in SECAM's history
+   ============================================================ */
+
+.our-journey {
+    max-width: 1315px;
+    width: 100%;
+    margin: auto;
+    text-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-container {
+    max-width: 1315px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.time-box {
+    max-width: 277px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Timeline circle indicators - each color represents a different era */
+.time-circle1 { width: 60px; height: 60px; border-radius: 50%; background: #661a88; }
+.time-circle2 { width: 60px; height: 60px; border-radius: 50%; background: #78169d; }
+.time-circle3 { width: 60px; height: 60px; border-radius: 50%; background: #ad118e; }
+.time-circle4 { width: 60px; height: 60px; border-radius: 50%; background: #d40d83; }
+
+/* Timeline period labels - colored to match their respective circles */
+.period1 { font-family: "Lato", sans-serif; font-size: 24px; color: #661a88; font-weight: 700; }
+.period2 { font-family: "Lato", sans-serif; font-size: 24px; color: #78169d; font-weight: 700; }
+.period3 { font-family: "Lato", sans-serif; font-size: 24px; color: #ad118e; font-weight: 700; }
+.period4 { font-family: "Lato", sans-serif; font-size: 24px; color: #d40d83; font-weight: 700; }
+
+.event {
+    font-family: "Lato", sans-serif;
+    font-size: 24px;
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+/* Horizontal lines connecting the timeline circles */
+.connector {
+    flex: 1;
+    height: 10px;
+    align-self: flex-start;
+    margin-top: 25px;
+    margin-left: -108.5px;
+    margin-right: -108.5px;
+}
+
+.connector1 { background: linear-gradient(to right, #661a88, #78169d); }
+.connector2 { background: linear-gradient(to right, #78169d, #ad118e); }
+.connector3 { background: linear-gradient(to right, #ad118e, #d40d83); }
+
+
+/* ============================================================
+   AIMS SECTION (VISION & MISSION)
+   Gradient banner displaying SECAM's vision and mission
+   ============================================================ */
+
+.aims {
+    width: 100%;
+    min-height: 318px;
+    background: linear-gradient(to right, #501baa, #d70c82);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2rem;
+    box-sizing: border-box;
+}
+
+.aims-container {
+    max-width: 1962px;
+    width: 100%;
+    min-height: 271px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    /* padding: 24px; */
+    box-sizing: border-box;
+}
+
+.aims-container h5 {
+    font-family: 'GFS Didot', serif;
+    font-size: 32px;
+    font-weight: 300;
+    color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+}
+
+.aims-container p {
+    font-family: "Lato", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #f1f1f1;
+    padding: 0;
+    margin: 0;
+}
+
+/* Vertical divider between vision and mission */
+.aims-line {
+    width: 2px;
+    min-height: 212px;
+    background-color: #f1f1f1;
+}
+
+.vision-container {
+    max-width: 610px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+.vision-box {
+    max-width: 434px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+.mission-container {
+    max-width: 948px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mission-box {
+    max-width: 948px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.mission-content {
+    max-width: 468px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+.mission-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mission-list ul {
+    list-style: none;
+}
+
+/* Responsive: stack vision and mission vertically on tablets */
+@media (max-width: 1024px) {
+    .aims-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aims-line {
+        width: 80%;
+        min-height: 2px;
+        height: 2px;
+    }
+
+    .vision-container,
+    .mission-container {
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .mission-box {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Responsive: stack vision icon and text on mobile */
+@media (max-width: 600px) {
+    .vision-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aims-container h5,
+    .aims-container p {
+        font-size: 18px;
+    }
+}
+
+
+/* ============================================================
+   AIMS AND OBJECTIVES SECTION
+   Numbered list of SECAM's core objectives
+   ============================================================ */
+
+.objectives-main {
+    max-width: 1920px;
+    width: 100%;
+    padding: 61px;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-sizing: border-box;
+}
+
+.objectives-container {
+    max-width: 1798px;
+    width: 100%;
+    min-height: 907px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    border: 1px solid #707070;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+/* Horizontal divider line below section heading */
+.objectives-line {
+    max-width: 1695px;
+    width: 100%;
+    border: 1px solid #707070;
+}
+
+.objective {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 1rem;
+}
+
+/* Numbered circle on the left of each objective */
+.objective-number {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #501baa;
+    color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Gradient colors for each objective number circle */
+.obj-1 { background-color: #501baa; }
+.obj-2 { background-color: #6a15a0; }
+.obj-3 { background-color: #8f1096; }
+.obj-4 { background-color: #a50e8f; }
+.obj-5 { background-color: #b50d8c; }
+.obj-6 { background-color: #c80c87; }
+.obj-7 { background-color: #d70c82; }
+
+.objective-number p {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Lato", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.objective-content p {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    color: #1a1a1a;
+    font-family: "Lato", sans-serif;
+}
+
+
+/* ============================================================
+   WHY "SYMPOSIUM" DROPDOWN SECTION
+   Collapsible section explaining SECAM's name choice
+   ============================================================ */
+
+/* Collapsed state - clickable pill-shaped bar */
+.why-container, .how-container {
+    max-width: 1798px;
+    width: 100%;
+    height: 117px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    border: #009edf 3px solid;
+    border-radius: 50px;
+    padding-inline: 5em;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+/* The +/- toggle icon */
+.why-icon, .how-icon {
+    font-size: 70px;
+    font-weight: 600;
+    color: #009edf;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Hidden by default, shown when why-active class is toggled via JS */
+.why-content {
+    display: none;
+    max-width: 1798px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.why-content.why-active {
+    display: block;
+}
+
+.how-content {
+    display: none;
+    max-width: 1798px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.how-content.how-active {
+    display: block;
+}
+
+/* Expanded state container - shown when dropdown is open */
+.why-top, .how-top {
+    max-width: 1798px;
+    width: 100%;
+    border: 1px solid #707070;
+    border-radius: 25px;
+    background-color: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+/* Header row inside the expanded dropdown with close (-) button */
+.why-open, .how-open {
+    max-width: 1680px;
+    width: 100%;
+    height: 39px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+/* ============================================================
+   SYMPOSIUM EXPLANATION (inside why dropdown)
+   Text and Venn diagram explaining the word "Symposium"
+   ============================================================ */
+
+.symposium {
+    max-width: 1680px;
+    width: 100%;
+    min-height: 527px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.symposium-text {
+    flex: 1;
+    min-width: 280px;
+    max-width: 717px;
+}
+
+/* Right-side diagram box containing the Venn diagram */
+.symposium-diagram {
+    flex: 1;
+    min-width: 280px;
+    max-width: 662px;
+    min-height: 527px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.symposium-diagram p {
+    font-size: 32px;
+    font-weight: 600;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Venn diagram layout */
+.venn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.venn-top {
+    display: flex;
+    flex-direction: row;
+}
+
+.venn-bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: -60px;
+}
+
+/* Individual Venn circles - overlapping via negative margins */
+.venn-circle {
+    width: 247px;
+    height: 247px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.85;
+    margin: -30px;
+}
+
+.venn-circle p {
+    color: #f1f1f1;
+    font-weight: 700;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+/* Responsive: stack text and diagram on smaller screens */
+@media (max-width: 768px) {
+    .symposium {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .symposium-text,
+    .symposium-diagram {
+        max-width: 100%;
+    }
+
+    .venn-circle {
+        width: 160px;
+        height: 160px;
+        margin: -20px;
+    }
+
+    .venn-bottom {
+        margin-top: -40px;
+    }
+}
+
+
+/* ============================================================
+   COMPOSITION OF SECAM SECTION
+   Details on SECAM's structure and membership
+   ============================================================ */
+
+.composition-container {
+    max-width: 1798px;
+    width: 100%;
+    min-height: 777px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.composition-content{
+    max-width: 1648px;
+    width: 100%;
+    min-height: 587px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.composition-text{
+    max-width: 627px;
+    width: 100%;
+}
+
+.composition{
+    max-width: 845px;
+    width: 100%;
+    min-height: 587px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.comp-card1{
+    width: 100%;
+    min-height: 150px;
+    text-align: center;
+    border: 6px solid #531aa8;
+    border-radius: 25px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.comp-card2{
+    width: 100%;
+    min-height: 228px;
+    text-align: center;
+    border: 6px solid #971394;
+    border-radius: 25px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 2x2 grid layout for Standing Committee members */
+.committee-comp{
+    max-width: 724px;
+    width: 100%;
+    height: 100px;
+    background-color: #f1f1f1;
+    border-radius: 25px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.committee-comp ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 40px;
+    list-style: disc;
+    padding-left: 20px;
+    margin: 10px 0 0 0;
+    text-align: left;
+}
+
+.committee-comp ul li {
+    font-family: "Lato", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.comp-card3{
+    width: 100%;
+    min-height: 150px;
+    text-align: center;
+    border: 6px solid #d40c83;
+    border-radius: 25px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ###        COMMISSION TAB OPEN      ######### */
+
+.commission{
+    max-width: 1653px;
+    width: 100%;
+    min-height: 419px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    box-sizing: border-box;
+}
+
+.comm-top{
+    max-width: 629px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.comm-card{
+    max-width: 692px;
+    width: 100%;
+    min-height: 419px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    flex: 1 1 280px;
+    border-radius: 15px;
+}
+
+.comm-card h4{
+    font-size: 32px;
+    font-weight: 600;
+    color: #f1f1f1;
+    font-family: "Lato", sans-serif;
+}
+
+.comm-card p{
+    font-size: 24px;
+    font-weight: 300;
+    color: #f1f1f1;
+    font-family: "Lato", sans-serif;
+}
+
+.blue-comm{
+    background-color:#4e1baa;
+}
+ .pink-comm{
+    background-color:#d10d84;
+ }
+
+ .conferences-container{
+    max-width: 1789px;
+    width: 100%;
+    background-color:#fff;
+    border-radius: 25px;
+    margin: auto 0;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    box-sizing: border-box;
+ }
+
+ .conferences-content{
+    max-width: 1604px;
+    width: 100%;
+    margin: auto 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+ }
+
+ .conf-card{
+    max-width: 722px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 2px;
+ }
+
+ .conf-card-header{
+    width:100%;
+    height: 130px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px;
+ }
+
+.conf-card-header p{
+    font-size:24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #f5f5f5;
+}
+
+.conf-card ul li{
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: #1a1a1a;
+    list-style: none;
+}
+
+.conf-card1{
+    border: solid #4f1aaa;
+    border-radius: 30px;
+}
+
+.conf-header1{
+    background-color: #4f1aaa;
+    border-radius: 25px 25px 0 0;
+}
+
+.conf-card2{
+    border: solid #6718a3;
+    border-radius: 30px;
+}
+
+.conf-header2{
+    background-color: #6718a3;
+    border-radius: 25px 25px 0 0;
+}
+
+
+.conf-card3{
+    border: solid #88159a;
+    border-radius: 30px;
+}
+
+.conf-header3{
+    background-color: #88159a;
+    border-radius: 25px 25px 0 0;
+}
+
+.conf-card4{
+    border: solid #a01292;
+    border-radius: 30px;
+}
+
+.conf-header4{
+    background-color: #a01292;
+    border-radius: 25px 25px 0 0;
+}
+
+.conf-card5{
+    border: solid #aa1290;
+    border-radius: 30px;
+}
+
+.conf-header5{
+    background-color: #aa1290;
+    border-radius: 25px 25px 0 0;
+}
+
+.conf-card6{
+    border: solid #b90f8a;
+    border-radius: 30px;
+}
+
+.conf-header6{
+    background-color: #b90f8a;
+    border-radius: 25px 25px 0 0;
+}
+
+.conf-card7{
+    border: solid #cc0d85;
+    border-radius: 30px;
+}
+
+.conf-header7{
+    background-color: #cc0d85;
+    border-radius: 25px;
+}
+
+.conf-card8{
+    border: solid #da0c81;
+    border-radius: 30px;
+}
+
+.conf-header8{
+    background-color: #da0c81;
+    border-radius: 25px;
+}
+
+/* ################################# */
+/* ######## ORGANOGRAM ########## */
+/* ################################# */
+
+.organogram-header, .secretariat-header{
+    position: relative;
+    max-width: 1060px;
+    width: 100%;
+    height: 93px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.org{
+    position: absolute;
+    width: 431px;
+    border: 1px solid #7c0033;
+    border-radius: 50px;
+    background-color: #fff;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.organogram {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.organogram img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+/* ############## SECRETARIAT ################### */
+
+.staff-container{
+    max-width: 1920px;
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+}
+
+.staff-label, .committee-label{
+    max-width: 400px;
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.staff-label{
+    background-color: #521ba9;
+}
+
+.committee-label{
+    background-color:#cd0d85;
+}
+
+.sec-label {
+    font-size:52px;
+    font-weight: 600;
+    font-family: 'GFS Didot', serif;
+    color: #f1f1f1;
+}
+
+.sec-content{
+    max-width: 1520px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+    position: relative;
+    overflow: hidden;
+}
+
+.sec-carousel{
+    width: 100%;
+    max-width: 1057px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sec-carousel-track{
+    display: flex;
+    width: 400%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.sec-card-container{
+    max-width: 1057px;
+    width: 25%;
+    min-height: 340px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    flex-shrink: 0;
+}
+
+.sec-card{
+    max-width: 495px;
+    width: 100%;
+    height: 144px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 3px solid #009edf;
+    border-radius: 72px 0 0 72px;
+    gap: 1.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    box-sizing: border-box;
+}
+
+.sec-img{
+    width: 144px;
+    height: 144px;
+    border-radius: 50%;
+    border: 3px solid #009edf;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.sec-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.sec-text{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.sec-name{
+    font-size: 19px;
+    font-weight: 500;
+    font-family: 'GFS Didot', serif;
+    color: #1a1a1a;
+}
+
+.sec-title{
+    font-size: 19px;
+    font-weight: 500;
+    color: #707070;
+}
+
+.sec-scroll{
+    max-width: 755px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slide-indicator{
+    width: 105px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slide-selected{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #1a1a1a;
+    background-color: #000;
+    border-radius: 50px;
+}
+
+.slide-circle{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #707070;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.scroll-selector{
+    width: 342px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.selector{
+    width: 151px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #1a1a1a;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+.selector:hover{
+    background-color: #009edf;
+}
+
+/* ################################# */
+/* ######## RESPONSIVE DESIGN ####### */
+/* ################################# */
+
+/* Tablet styles (1024px and below) */
+@media (max-width: 1024px) {
+    /* Global adjustments */
+    body {
+        padding: 0 1rem;
+    }
+    
+    h3 {
+        font-size: 36px;
+    }
+    
+    h4 {
+        font-size: 28px;
+    }
+    
+    p, .bold {
+        font-size: 20px;
+    }
+    
+    /* Who Are We Section */
+    .who-container {
+        padding: 0 2rem;
+    }
+    
+    .who-top {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        min-height: auto;
+    }
+    
+    .who-top img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Timeline Section */
+    .our-journey {
+        padding: 0 1rem;
+    }
+    
+    .time-container {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+    
+    .time-box {
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .connector {
+        display: none;
+    }
+    
+    /* Objectives Section */
+    .objectives-main {
+        padding: 2rem;
+    }
+    
+    .objectives-container {
+        padding: 2rem;
+    }
+    
+    .objective {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .objective-number {
+        align-self: center;
+    }
+    
+    /* Composition Section */
+    .composition-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .composition-text {
+        max-width: 100%;
+    }
+    
+    .composition {
+        max-width: 100%;
+    }
+    
+    /* Conferences Section */
+    .conferences-container {
+        padding: 3rem 2rem;
+    }
+    
+    .conferences-content {
+        gap: 2rem;
+    }
+    
+    .conf-card {
+        max-width: 100%;
+        flex: 1 1 300px;
+    }
+    
+    /* Dropdown sections */
+    .why-container, .how-container {
+        padding-inline: 2rem;
+        height: auto;
+        min-height: 80px;
+        padding: 1rem 2rem;
+    }
+    
+    .why-icon, .how-icon {
+        font-size: 50px;
+    }
+    
+    .why-top, .how-top {
+        padding: 2rem;
+    }
+    
+    .symposium {
+        padding: 2rem;
+        gap: 2rem;
+    }
+    
+    /* Commission cards */
+    .commission {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .comm-card {
+        max-width: 100%;
+        min-height: 300px;
+        padding: 1.5rem;
+        flex: none;
+    }
+    
+    .comm-top {
+        gap: 1rem;
+        justify-content: center;
+    }
+    
+    /* Organogram */
+    .organogram-header, .secretariat-header {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    
+    .org {
+        width: 350px;
+        max-width: 90%;
+    }
+    
+    .organogram {
+        padding: 1.5rem;
+    }
+    
+    /* Staff/Committee sections */
+    .staff-container {
+        flex-direction: column;
+        min-height: auto;
+    }
+    
+    .staff-label, .committee-label {
+        max-width: 100%;
+        min-height: 120px;
+        padding: 2rem 0;
+        order: 0;
+    }
+    
+    .committee-label {
+        order: -1;
+    }
+    
+    .sec-label {
+        font-size: 36px;
+    }
+    
+    .sec-content {
+        max-width: 100%;
+        padding: 0 2rem;
+        gap: 2em;
+    }
+    
+    .sec-carousel {
+        max-width: 100%;
+    }
+    
+    .sec-card {
+        max-width: 100%;
+        height: 100px;
+        padding: 0.75rem 0.75rem 0.75rem 0;
+        gap: 1rem;
+        border-radius: 50px 0 0 50px;
+    }
+    
+    .sec-img {
+        width: 100px;
+        height: 100px;
+        flex-shrink: 0;
+    }
+    
+    .sec-text {
+        flex: 1;
+    }
+    
+    .sec-name, .sec-title {
+        font-size: 16px;
+    }
+    
+    .sec-scroll {
+        max-width: 100%;
+        flex-direction: column;
+        gap: 2rem;
+        height: auto;
+        padding: 2rem 0;
+    }
+    
+    .scroll-selector {
+        width: 280px;
+        height: 80px;
+    }
+    
+    .selector {
+        width: 120px;
+        height: 80px;
+    }
+}
+
+/* Mobile styles (768px and below) */
+@media (max-width: 768px) {
+    /* Global adjustments */
+    body {
+        padding: 0 0.5rem;
+    }
+    
+    h3 {
+        font-size: 28px;
+    }
+    
+    h4 {
+        font-size: 24px;
+    }
+    
+    p, .bold {
+        font-size: 18px;
+    }
+    
+    /* Who Are We Section */
+    .who-container {
+        padding: 0 1rem;
+        gap: 1rem;
+    }
+    
+    .who-bottom {
+        min-height: auto;
+    }
+    
+    /* Timeline adjustments */
+    .time-circle1, .time-circle2, .time-circle3, .time-circle4 {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .period1, .period2, .period3, .period4, .event {
+        font-size: 18px;
+    }
+    
+    /* Aims section */
+    .aims-container {
+        /* padding: 1rem; */
+        gap: 1rem;
+    }
+    
+    .aims-container h5 {
+        font-size: 24px;
+    }
+    
+    .aims-container p {
+        font-size: 18px;
+    }
+    
+    .mission-list ul li p {
+        font-size: 16px;
+    }
+    
+    /* Objectives */
+    .objectives-main {
+        padding: 1rem;
+    }
+    
+    .objectives-container {
+        padding: 1rem;
+    }
+    
+    .objective-number {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .objective-number p {
+        font-size: 20px;
+    }
+    
+    /* Composition cards */
+    .comp-card1, .comp-card2, .comp-card3 {
+        min-height: 120px;
+        padding: 1rem;
+    }
+    
+    .committee-comp {
+        height: auto;
+        min-height: 80px;
+    }
+    
+    .committee-comp ul li {
+        font-size: 18px;
+    }
+    
+    /* Conference cards */
+    .conferences-container {
+        padding: 2rem 1rem;
+    }
+    
+    .conf-card-header {
+        height: 100px;
+    }
+    
+    .conf-card-header p {
+        font-size: 18px;
+    }
+    
+    .conf-card ul li {
+        font-size: 18px;
+    }
+    
+    /* Dropdown sections */
+    .why-container, .how-container {
+        padding: 1rem;
+        border-radius: 25px;
+    }
+    
+    .why-container h4, .how-container h4 {
+        font-size: 20px;
+    }
+    
+    .why-icon, .how-icon {
+        font-size: 40px;
+    }
+    
+    .why-top, .how-top {
+        padding: 1rem;
+    }
+    
+    .symposium {
+        padding: 1rem;
+    }
+    
+    .symposium-diagram p {
+        font-size: 24px;
+    }
+    
+    /* Commission cards */
+    .comm-card {
+        min-height: 250px;
+        padding: 1.5rem;
+        flex: none;
+        width: 100%;
+    }
+    
+    .comm-card h4 {
+        font-size: 24px;
+    }
+    
+    .comm-card p {
+        font-size: 18px;
+    }
+    
+    .comm-top {
+        gap: 2rem;
+    }
+    
+    /* Organogram */
+    .organogram-header, .secretariat-header {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    
+    .org {
+        width: 300px;
+        max-width: 85%;
+    }
+    
+    .organogram {
+        padding: 1rem;
+    }
+    
+    .organogram img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Staff/Committee carousel */
+    .sec-content {
+        padding: 0 1rem;
+        gap: 1.5em;
+    }
+    
+    .sec-card-container {
+        gap: 1rem;
+        min-height: auto;
+    }
+    
+    .sec-card {
+        height: 80px;
+        padding: 0.5rem 0.5rem 0.5rem 0;
+        gap: 0.75rem;
+        border-radius: 40px 0 0 40px;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .sec-img {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+        align-self: center;
+    }
+    
+    .sec-text {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .sec-name {
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .sec-title {
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    .sec-label {
+        font-size: 28px;
+    }
+    
+    .scroll-selector {
+        width: 240px;
+        height: 60px;
+    }
+    
+    .selector {
+        width: 100px;
+        height: 60px;
+        font-size: 14px;
+    }
+    
+    .slide-indicator {
+        width: 80px;
+    }
+    
+    .slide-selected {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .slide-circle {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+/* Small mobile styles (480px and below) */
+@media (max-width: 480px) {
+    /* Global adjustments */
+    h3 {
+        font-size: 24px;
+    }
+    
+    h4 {
+        font-size: 20px;
+    }
+    
+    p, .bold {
+        font-size: 16px;
+    }
+    
+    /* Who Are We */
+    .who-container {
+        padding: 0 0.5rem;
+    }
+    
+    /* Timeline */
+    .time-circle1, .time-circle2, .time-circle3, .time-circle4 {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .period1, .period2, .period3, .period4, .event {
+        font-size: 16px;
+    }
+    
+    /* Aims */
+    .aims-container h5 {
+        font-size: 20px;
+    }
+    
+    .aims-container p {
+        font-size: 16px;
+    }
+    
+    /* Objectives */
+    .objective-number {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .objective-number p {
+        font-size: 18px;
+    }
+    
+    .objective-content p {
+        font-size: 16px;
+    }
+    
+    /* Composition */
+    .committee-comp ul li {
+        font-size: 16px;
+    }
+    
+    /* Conferences */
+    .conf-card-header {
+        height: 80px;
+    }
+    
+    .conf-card-header p {
+        font-size: 16px;
+    }
+    
+    .conf-card ul li {
+        font-size: 16px;
+    }
+    
+    /* Dropdowns */
+    .why-container h4, .how-container h4 {
+        font-size: 18px;
+    }
+    
+    .why-icon, .how-icon {
+        font-size: 35px;
+    }
+    
+    .symposium-diagram p {
+        font-size: 20px;
+    }
+    
+    /* Commission cards */
+    .comm-card h4 {
+        font-size: 20px;
+    }
+    
+    .comm-card p {
+        font-size: 16px;
+    }
+    
+    .comm-top {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    /* Organogram */
+    .organogram-header, .secretariat-header {
+        max-width: 100%;
+        padding: 0 0.5rem;
+    }
+    
+    .org {
+        width: 250px;
+        max-width: 80%;
+    }
+    
+    .organogram {
+        padding: 0.5rem;
+    }
+    
+    .organogram img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Staff/Committee */
+    .sec-content {
+        padding: 0 0.5rem;
+    }
+    
+    .sec-card {
+        height: 70px;
+        padding: 0.4rem 0.4rem 0.4rem 0;
+        gap: 0.5rem;
+        border-radius: 35px 0 0 35px;
+    }
+    
+    .sec-img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .sec-name {
+        font-size: 12px;
+    }
+    
+    .sec-title {
+        font-size: 11px;
+    }
+    
+    .sec-label {
+        font-size: 24px;
+    }
+    
+    .scroll-selector {
+        width: 200px;
+        height: 50px;
+    }
+    
+    .selector {
+        width: 80px;
+        height: 50px;
+        font-size: 12px;
+    }
+    
+    .slide-indicator {
+        width: 60px;
+    }
+    
+    .slide-selected {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .slide-circle {
+        width: 10px;
+        height: 10px;
+    }
+}
+
