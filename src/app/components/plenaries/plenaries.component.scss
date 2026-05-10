@@ -1,0 +1,74 @@
+h1 {
+  font-family: "GFS Didot", serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 82px;
+  margin-top: 100px;
+  color: white;
+}
+.container {
+  max-width: 1920px;
+  padding: 60px 85px;
+  background: #f1f1f1;
+}
+.content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
+}
+.content {
+  max-width: 860px;
+  max-height: 322px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  box-shadow: 0px 3px 6px 0px #00000029;
+  padding: 30px;
+}
+.content-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.number span {
+  width: 100%;
+  height: 100%;
+  max-width: 120px;
+  max-height: 80px;
+  border-radius: 25px;
+  background-color: #009edf;
+  font-family: Poppins;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 32px;
+  padding: 15px;
+}
+.number p {
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
+  margin-top: 9px;
+}
+.date span {
+  color: #000000;
+  font-weight: 600;
+
+  font-size: 24px;
+}
+.date p {
+  color: #000000;
+  font-weight: 400;
+
+  font-size: 24px;
+}
+.content-body h6 {
+  font-weight: 600;
+  font-size: 32px;
+  color: #000000;
+  margin-top: 7px;
+}
+.content-body p {
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
+  margin-top: 8px;
+}
